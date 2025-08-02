@@ -2,6 +2,9 @@ import DiscordStats from './DiscordStats';
 import GitHubStats from './GitHubStats';
 import PlatformStats from './PlatformStats';
 import YouTubeContent from './YouTubeContent';
+import CVETracker from './CVETracker';
+import CTFEvents from './CTFEvents';
+import SkillsRadar from './SkillsRadar';
 
 const StatsGrid = () => {
   return (
@@ -37,8 +40,23 @@ const StatsGrid = () => {
         </div>
       </div>
 
+      {/* Security & CTF Grid */}
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+        <div className="animate-fade-in" style={{ animationDelay: '1.2s' }}>
+          <CVETracker />
+        </div>
+        
+        <div className="animate-fade-in" style={{ animationDelay: '1.4s' }}>
+          <CTFEvents />
+        </div>
+        
+        <div className="animate-fade-in" style={{ animationDelay: '1.6s' }}>
+          <SkillsRadar />
+        </div>
+      </div>
+
       {/* IRC server info */}
-      <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: '1.2s' }}>
+      <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: '1.8s' }}>
         <div className="inline-flex items-center space-x-3 px-6 py-3 bg-muted/50 border border-border rounded-lg">
           <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse"></div>
           <span className="font-mono text-sm text-muted-foreground">

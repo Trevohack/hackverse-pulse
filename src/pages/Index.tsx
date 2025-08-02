@@ -1,10 +1,13 @@
 import HeroSection from '@/components/HeroSection';
 import StatsGrid from '@/components/StatsGrid';
 import IRCTerminal from '@/components/IRCTerminal';
+import MatrixRain from '@/components/MatrixRain';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <MatrixRain />
+      <div className="relative z-10">
       <HeroSection />
       <StatsGrid />
       
@@ -22,6 +25,7 @@ const Index = () => {
         <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <IRCTerminal />
         </div>
+      </div>
       </div>
     </div>
   );
