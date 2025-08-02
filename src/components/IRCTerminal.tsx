@@ -110,7 +110,7 @@ const IRCTerminal = () => {
         {/* Terminal Content */}
         <div className="p-4 h-96 overflow-y-auto bg-black/50 font-mono text-sm">
           <div className="space-y-1">
-            {messages.map((msg, index) => (
+            {messages.filter(msg => msg && msg.type).map((msg, index) => (
               <div 
                 key={index} 
                 className="animate-fade-in opacity-0 animation-fill-forwards"
