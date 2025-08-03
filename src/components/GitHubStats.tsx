@@ -28,7 +28,7 @@ const GitHubStats = () => {
       try {
         const [userResponse, reposResponse] = await Promise.all([
           fetch('https://api.github.com/users/Trevohack'),
-          fetch('https://api.github.com/users/Trevohack/repos?sort=stars&per_page=5')
+          fetch('https://api.github.com/users/Trevohack/repos?sort=stars&per_page=100')
         ]);
 
         if (!userResponse.ok || !reposResponse.ok) {
