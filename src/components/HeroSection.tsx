@@ -10,7 +10,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center space-y-8 px-4">
         <div className="space-y-4">
-          <h1 className="text-6xl md:text-8xl font-bold font-mono bg-gradient-primary bg-clip-text text-transparent animate-fade-in" title="trev{h1dd3n_1n_pl41n_51gh7_a8e9c7f2d4b6}">
+          <h1 className="text-6xl md:text-8xl font-bold font-mono bg-gradient-primary bg-clip-text text-transparent animate-fade-in">
             Hackverse
           </h1>
           <div className="flex items-center justify-center space-x-3 animate-fade-in" style={{ animationDelay: '0.2s' }}>

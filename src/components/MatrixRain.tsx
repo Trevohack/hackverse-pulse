@@ -18,7 +18,7 @@ const MatrixRain = () => {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Matrix characters (trev{m47r1x_r41n_h1dd3n_1n_c4nv45_a7f8e6d9b2c1})
+    // Matrix characters
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*(){}[]|\\:";\'<>?.,/~`';
     const charArray = chars.split('');
 

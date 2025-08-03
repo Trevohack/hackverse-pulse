@@ -5,7 +5,6 @@ import YouTubeContent from './YouTubeContent';
 import CVETracker from './CVETracker';
 import CTFEvents from './CTFEvents';
 import SkillsRadar from './SkillsRadar';
-import WallOfHackers from './WallOfHackers';
 
 const StatsGrid = () => {
   return (
@@ -56,15 +55,8 @@ const StatsGrid = () => {
         </div>
       </div>
 
-      {/* Wall of Hackers Section */}
-      <div className="max-w-6xl mx-auto mb-16">
-        <div className="animate-fade-in" style={{ animationDelay: '1.8s' }}>
-          <WallOfHackers />
-        </div>
-      </div>
-
       {/* IRC server info */}
-      <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: '2.0s' }}>
+      <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: '1.8s' }}>
         <div className="inline-flex items-center space-x-3 px-6 py-3 bg-muted/50 border border-border rounded-lg">
           <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse"></div>
           <span className="font-mono text-sm text-muted-foreground">

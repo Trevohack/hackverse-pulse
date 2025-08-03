@@ -49,18 +49,16 @@ const IRCTerminal = () => {
             charIndex++;
             if (charIndex >= newMessage.length) {
               clearInterval(typingInterval);
-                setTimeout(() => {
-                  setMessages(prev => [...prev, {
-                    timestamp: '14:41',
-                    user: '0xTrev',
-                    message: newMessage,
-                    type: 'message'
-                  }]);
-                  setCurrentMessage('');
-                  setIsTyping(false);
-                  // Hidden flag for persistent hackers
-                  console.log('trev{c0n50l3_d33p_d1gg3r_f7a3b8e5c2d9}');
-                }, 500);
+              setTimeout(() => {
+                setMessages(prev => [...prev, {
+                  timestamp: '14:41',
+                  user: '0xTrev',
+                  message: newMessage,
+                  type: 'message'
+                }]);
+                setCurrentMessage('');
+                setIsTyping(false);
+              }, 500);
             }
           }, 50);
         }, 2000);
